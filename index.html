@@ -1,0 +1,131 @@
+<html>
+<head>
+	<title>TITULO</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!-- ### CSS ### -->
+	<style rel="stylesheet" type="text/css">
+		
+		body {height: 100%; width:100%}
+		
+		.bg {
+		/* The image used */
+		background-image: url("./imgs/img-RPG/bkgheroquest_Cel.jpg");
+
+		/* Full height */
+		height: 100%; 
+
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		}
+		/* For width 600px and larger: */
+		@media only screen and (min-width: 600px) {
+			.bg { 
+				background-image: url('./imgs/img-RPG/bkgheroquest.jpg'); 
+			}
+		}
+		
+		.caption {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			text-align: center;
+			color: #000;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="bg">
+		<div>
+			<button type="button" class="btn btn-default btn-lg caption" id="myBtn">Login</button>
+		</div>
+	</div>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="modalLogin" role="dialog">
+		<div class="modal-dialog" style="top:15%">
+    
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header" style="padding:35px 50px;">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4><i class="fas fa-dice"></i><i class="fab fa-d-and-d"></i></span> Login</h4>
+				</div>
+				<div class="modal-body" style="padding:40px 50px;">
+					<form role="form">
+						<div class="form-group">
+							<label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+							<input type="text" class="form-control" id="usrname" placeholder="Nome do usuário">
+						</div>
+						<div class="form-group">
+							<label for="psw"><i class="fas fa-key"></i></span> Password</label>
+							<input type="password" class="form-control" id="psw" placeholder="Senha">
+						</div>
+						<!-- <div class="checkbox">
+							<label><input type="checkbox" value="" checked>Lembre-se de mim</label>
+						</div> -->
+						
+					</form>
+					<button type="submit" class="btn btn-success btn-block" onclick="verificaLogin()"><span class="glyphicon glyphicon-lock"></span> Login</button>
+				</div>
+				 <div class="modal-footer">
+					<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+					<!--<p>Ainda não é membro? <a href="#">Sign Up</a></p>
+					<p>Esqueceu a <a href="#">Senha?</a></p>-->
+				</div> 
+			</div>
+      
+		</div>
+	</div> 
+
+	
+<!-- SCRIPTS -->
+	<script type="text/javascript">
+		<!-- Verificar LOGIN =============== -->
+		<!-- Variáveis -->
+		var username;
+		var password;
+		var validador = false;
+		<!-- Verificação -->
+		function verificaLogin () {
+			username =  document.getElementById("usrname").value;
+			password =  document.getElementById("psw").value;
+			
+			<!-- Teste Jr -->
+			if (username == "sjunior" && password == "eragonkill") {
+				alert ("foi");
+				//window.open("file:./RPG-Itens_Comuns.html", "_self");
+				location.href = "file:./RPG-Itens_Comuns.html";
+				validador = true;
+			}
+			
+			<!-- Caso não identifique -->
+			if (validador == false) {
+				alert("Usuário não identificado");
+			}
+		}
+	
+	</script>
+	<script> <!-- Abrir e fechar Modal -->
+		$(document).ready(function(){
+			$("#myBtn").click(function(){
+				$("#modalLogin").modal();
+			});
+		});
+	</script>
+	
+</body>
+</html>

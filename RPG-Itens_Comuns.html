@@ -1,0 +1,227 @@
+<html>
+<head>
+	<title>TITULO</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!-- ### CSS ### -->
+	<style rel="stylesheet" type="text/css">
+		
+		.h3Item {
+			display: inline;
+		}
+		.btn-subTitl {
+			text-decoration: none;
+			border-radius:10px;
+		}
+		.btn-subTitl::after {
+			content: '';
+			display: block;
+			width: 0;
+			height: 2px;
+			background: gray;
+			transition: width .3s;
+		}
+		.btn-subTitl:hover::after {
+			width: 100%;
+			transition: width .3s;
+		}
+		.btn-subTitl:hover {
+			cursor:pointer;
+		}
+		
+		.itemBloco {
+			padding:2px;
+		}
+		.itens {
+			border: 1px solid #ccc!important;
+			padding:2px;
+			margin:1px;
+			background-color: #ddd;
+		}
+		.itemImg {
+			width:80px;
+			height:85px; 
+			margin: 1px 5px;
+			float: left;
+			border: 1px solid #aaa!important;
+		}
+		.itemNm_comum {
+			font: italic bold 12px/30px Verdana, sans-serif;
+		}
+		.itemPreco {
+			float: right;
+			font-family: "Segoe UI"; 
+			font-size: 12px; 
+			font-style: italic; 
+			font-variant: normal; 
+			line-height: 17.1429px;
+		}
+	
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<h1 class="page-header">TITULO 1</h1>
+		<p>Parágrafo parágrafo parágrafo parágrafo parágrafo parágrafo.</p>
+				
+		<div id="" class="">
+			<div class = "page-header w3-animate-right">
+				<h2><span id="">TITULO 2</span><br/>
+				<small>Pequenas informações</small></h2>
+			</div>
+			<h3>Descrição</h3>
+			<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum ut elit eu congue. 
+				Nam sodales diam non nisl gravida aliquam. Etiam interdum efficitur consequat. Vivamus sodales ex elit, a dictum erat venenatis ac. 
+				Nunc rhoncus elit condimentum elit eleifend, vitae dictum magna pulvinar. Curabitur maximus ex sed leo ultrices, eu imperdiet orci viverra. 
+				Duis consectetur elit in lacinia faucibus. <b>Fogo</b> e a <b>Eletricidade</b>.</p>
+			<p>	Cras euismod lacus risus, nec molestie sem rhoncus ac. Ut suscipit ligula id odio rutrum ultricies. Curabitur eget dictum nibh. 
+				Nam ornare leo ac ex ornare, sed suscipit dui finibus. 
+				Fusce venenatis neque ex, non consequat velit dapibus quis. Proin pharetra ultricies efficitur. </p>
+			<p>	Cras euismod lacus risus, nec molestie sem rhoncus ac. Ut suscipit ligula id odio rutrum ultricies. Curabitur eget dictum nibh. 
+				Nam ornare leo ac ex ornare, sed suscipit dui finibus. 
+				Fusce venenatis neque ex, non consequat velit dapibus quis. Proin pharetra ultricies efficitur. </p>		
+			
+			<!-- PERICIA MACHADO / MAÇA =============================================== -->
+			<span class ="w3-animate-left btn-subTitl" href="#PericiaMachado" data-toggle="collapse"><span class="glyphicon glyphicon-plus"></span> <h3 class="h3Item">Machados / Maças</h3></span>
+			<div id="PericiaMachado" class="container-fluid collapse">
+				
+				<!-- LINHA 1 =============================================== -->
+				<div class="row">
+					<!-- Bloco =============================================== -->
+					<div class="col-md-4 itemBloco">
+						<div class="itens">
+							<span class="itemPreco"> 25 Moedas </span>
+							<span class="itemNm_comum"> Machadinha </span>
+							<img src="./imgs/img-RPG/item_simples_machadinha.jpg" alt="Item_1" class="w3-animate-opacity itemImg">
+							<p>	<b>Dano: </b><i>Corte</i> BAL+1 / <i>Arremesso</i> GdP<br/>
+								<b>Aparar: </b> - <br/>
+								<b>Peso: </b> 1 Kg <span style="float:right;"><b>ST Min: </b> 7 </span></p>
+							<p> Machadinha simples de artesanato simples. Não requer maiores habilidades para manuseá-la, pois não passa de um
+								pedaço de madeira com um ferro afiado na ponta. <br/>
+								Muito comum em tribos de pouca técnologia. <br/>
+								<i>É arremessável.</i></p>
+						</div>
+					</div>
+					<!-- Bloco =============================================== -->
+					<div class="col-md-4 itemBloco">
+						<div class="itens">
+							<span class="itemPreco"> 50 Moedas </span>
+							<span class="itemNm_comum"> Machado </span>
+							<img src="./imgs/img-RPG/item_simples_machado.jpg" alt="Item_2" class="w3-animate-opacity itemImg">
+							<p>	<b>Dano: </b><i>Corte</i> BAL+2 <br/>
+							<b>Aparar: </b> -2 <br/>
+							<b>Peso: </b> 1,5 Kg <span style="float:right;"><b>ST Min: </b> 10 </span></p>
+							<p> Uma arma muito comum entre Orcs e Bárbaros. Geralmente escolhida por guerreiros que gostam de massacrar seus inimigos.<br/>
+								Além de útil como arma, também é útil para cortar madeiras. <br/>
+								Por não ser tão bem balanceada, fica difícil de preparar um ataque e bloquear com ela.<br/>
+								<i>Demora 1 turno para preparar. Pode-se cortar madeiras com esta arma.</i></p>
+						</div>
+					</div>
+					<!-- Bloco =============================================== -->
+					<div class="col-md-4 itemBloco">
+						<div class="itens">
+							<span class="itemPreco"> 20 Moedas </span>
+							<span class="itemNm_comum"> Machado de Arremesso </span>
+							<img src="./imgs/img-RPG/item_simples_machado_arr.jpg" alt="Item_3" class="w3-animate-opacity itemImg">
+							<p>	<b>Dano: </b><i>Corte</i> BAL / <i>Arremesso</i> GdP+2<br/>
+								<b>Aparar: </b> - <br/>
+								<b>Peso: </b> 1 Kg <span style="float:right;"><b>ST Min: </b> 9 </span></p>
+							<p> Pequena, leve e muito bem balanceada, perfeita para um arremesso. </p>
+							<p> -coluna 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum ut elit eu congue. 
+								Nam sodales diam non nisl gravida aliquam. Etiam interdum efficitur consequat. Vivamus sodales ex elit, a dictum erat venenatis ac. 
+								Nunc rhoncus elit condimentum elit eleifend, vitae dictum magna pulvinar. Curabitur maximus ex sed leo ultrices, eu imperdiet orci viverra. </p>
+						</div>
+					</div>	
+				</div><!-- Fim da ROW =============================================== -->
+							
+				<!-- LINHA 2 =============================================== -->
+				<div class="row">
+					<!-- Bloco =============================================== -->
+					<div class="col-md-4 itemBloco">
+						<div class="itens">
+							<span class="itemPreco"> 125 Moedas </span>
+							<span class="itemNm_comum"> Machado de Batalha </span>
+							<img src="./imgs/img-RPG/item_simples_machado_batalha.jpg" alt="Item_4" class="w3-animate-opacity itemImg">
+							<p>	<b>Dano: </b><i>Corte</i> BAL+1d4<br/>
+								<b>Aparar: </b> -2 <br/>
+								<b>Peso: </b> 2,8 Kg <span style="float:right;"><b>ST Min: </b> 12 </span></p>
+							<p> É um machado usado geralmente em batalhas, por ter um dano razoável e uma resistência do mesmo nível quando se usa para um desafio sério,
+								embora isso não signifique que é o melhor tipo de machado que pode ser encontrado no mundo.<br/>
+								O machado de batalha possui duas lâminas na ponta do cabo e possuem uma resistência razoável. <br/>
+								<i>Demora 1 turno para preparar. Não é arremessável.</i></p>
+						</div>
+					</div>
+					<!-- Bloco =============================================== -->
+					<div class="col-md-4 itemBloco">
+						<div class="itens">
+							<span class="itemPreco"> 20 Moedas </span>
+							<span class="itemNm_comum"> Clava de Madeira </span>
+							<img src="./imgs/img-RPG/item_simples_clava_madeira.jpg" alt="Item_5" class="w3-animate-opacity itemImg">
+							<p>	<b>Dano: </b><i>Contusão </i> BAL <br/>
+							<b>Aparar: </b> -1 <br/>
+							<b>Peso: </b> 1 Kg <span style="float:right;"><b>ST Min: </b> 6 </span></p>
+							<p> Uma arma extremamente rústica. Não passa de um pedaço de madeira, lascado e moldado para atacar.<br/>
+								Arma preferida de alguns tipos de Goblins e Kobolds.
+								<i> Possui 50pv para aparar por sua haste ser de madeira.</i></p>
+						</div>
+					</div>
+					<!-- Bloco =============================================== -->
+					<div class="col-md-4 itemBloco">
+						<div class="itens">
+							<span class="itemPreco"> 20 Moedas </span>
+							<span class="itemNm_comum"> Machado de Arremesso </span>
+							<img src="./imgs/img-RPG/item_simples_machado_arr.jpg" alt="Item_3" class="w3-animate-opacity itemImg">
+							<p>	<b>Dano: </b><i>Corte</i> BAL / <i>Arremesso</i> GdP+2<br/>
+								<b>Aparar: </b> - <br/>
+								<b>Peso: </b> 1 Kg <span style="float:right;"><b>ST Min: </b> 9 </span></p>
+							<p> Pequena, leve e muito bem balanceada, perfeita para um arremesso. </p>
+							<p> -coluna 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum ut elit eu congue. 
+								Nam sodales diam non nisl gravida aliquam. Etiam interdum efficitur consequat. Vivamus sodales ex elit, a dictum erat venenatis ac. 
+								Nunc rhoncus elit condimentum elit eleifend, vitae dictum magna pulvinar. Curabitur maximus ex sed leo ultrices, eu imperdiet orci viverra. </p>
+						</div>
+					</div>	
+				</div><!-- Fim da ROW =============================================== -->		
+							
+							<div class="row">
+								<div class="col-md-4 itemBloco">
+									<div class="itens">
+									Coluna 4
+									</div>
+								</div>
+								<div class="col-md-4 itemBloco">
+									<div class="itens">
+									Coluna 5
+									</div>
+								</div>
+								<div class="col-md-4 itemBloco">
+									<div class="itens">
+									Coluna 6
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					<p></p>
+					
+					
+				
+		</div>	
+	</div>
+	
+	
+	<!-- SCRIPTS -->
+	<script type="text/javascript">
+	
+		
+	
+	</script>
+</body>
+</html>
