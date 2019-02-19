@@ -1,13 +1,13 @@
 <html>
 <head>
-	<title>RPG GIRPS XD 3.X - Login</title>
+	<title>RPG GURPS XD 3.X - Login</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 	
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -16,19 +16,29 @@
 	<!-- ### CSS ### -->
 	<style rel="stylesheet" type="text/css">
 		
-		body {height: 100%; width:100%}
+		body {height: 100%; width:100%;
+		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size: 16px;
+		}
+		
+		h3 { 
+			color : gold;
+			font-family: 'Permanent Marker', cursive;
+			font-size: 1.7em; 
+			font-style: italic; 
+			font-variant: normal;
+			text-shadow: 5px 5px 20px #333;			
+		}
 		
 		.bg {
-		/* The image used */
-		background-image: url("./imgs/img-RPG/bkgheroquest_Cel.jpg");
-
-		/* Full height */
-		height: 100%; 
-
-		/* Center and scale the image nicely */
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
+			/* The image used */
+			background-image: url("./imgs/img-RPG/bkgheroquest_Cel.jpg");
+			/* Full height */
+			height: 100%; 
+			/* Center and scale the image nicely */
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
 		}
 		/* For width 600px and larger: */
 		@media only screen and (min-width: 600px) {
@@ -39,18 +49,22 @@
 		
 		.caption {
 			position: absolute;
-			left: 50%;
 			top: 50%;
+			left: 50%;
+			margin-right: -50%;
+			transform: translate(-50%, -50%);
 			text-align: center;
-			color: #000;
 		}
+		
+		
 		
 	</style>
 </head>
 <body>
 	<div class="bg">
-		<div>
-			<button type="button" class="btn btn-default btn-lg caption" id="myBtn">Login</button>
+		<div class ="caption">
+			<h3>Está preparado para enfrentar seu maior desafio?</h3>
+			<button type="button" class="btn btn-default btn-lg " id="btnLogin">Login</button>
 		</div>
 	</div>
 	
@@ -67,7 +81,7 @@
 				<div class="modal-body" style="padding:40px 50px;">
 					<form role="form">
 						<div class="form-group">
-							<label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+							<label for="usrname"><i class="fas fa-dragon"></i></span> Username</label>
 							<input type="text" class="form-control" id="usrname" placeholder="Nome do usuário">
 						</div>
 						<div class="form-group">
@@ -79,7 +93,7 @@
 						</div> -->
 						
 					</form>
-					<button type="submit" class="btn btn-success btn-block" onclick="verificaLogin()"><span class="glyphicon glyphicon-lock"></span> Login</button>
+					<button type="submit" class="btn btn-success btn-block" onclick="verificaLogin()"><i class="fas fa-dungeon"></i> Login</button>
 				</div>
 				 <div class="modal-footer">
 					<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
@@ -120,7 +134,7 @@
 	</script>
 	<script> <!-- Abrir e fechar Modal -->
 		$(document).ready(function(){
-			$("#myBtn").click(function(){
+			$("#btnLogin").click(function(){
 				$("#modalLogin").modal();
 			});
 		});
