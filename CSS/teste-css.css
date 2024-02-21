@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+body {
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100%; 
+    height: 1000vh;/* Tamanho gigante para teste */
+}
+
+.main {
+    margin: 25px 10px 0px; /* Acima, Laterais e Abaixo */
+}
+
+.navbar{
+    border-bottom-style: solid;
+    border-bottom-color: lightgray;
+    border-bottom-width: 2px;
+}
+
+/*
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap);
+
+body, html {
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    min-height: 100vh
+}
+
+.card-header {
+    font-size: 1.25em
+}
+
+.pulse-danger {
+    -webkit-animation: animate-danger 1s linear infinite;
+    animation: animate-danger 1s linear infinite
+}
+
+.pulse-warning {
+    -webkit-animation: animate-warning 3s linear infinite;
+    animation: animate-warning 3s linear infinite
+}
+
+@-webkit-keyframes animate-danger {
+    0% {
+        box-shadow: 0 0 0 0 rgba(231, 76, 60, .7), 0 0 0 0 rgba(231, 76, 60, .7)
+    }
+
+    50% {
+        box-shadow: 0 0 0 50px rgb(231, 76, 60, 0), 0 0 0 0 rgba(231, 76, 60, .7)
+    }
+}
+
+@keyframes animate-danger {
+    0% {
+        box-shadow: 0 0 0 0 rgba(231, 76, 60, .7), 0 0 0 0 rgba(231, 76, 60, .7)
+    }
+
+    50% {
+        box-shadow: 0 0 0 50px rgb(231, 76, 60, 0), 0 0 0 0 rgba(231, 76, 60, .7)
+    }
+}
+
+@-webkit-keyframes animate-warning {
+    0% {
+        box-shadow: 0 0 0 0 rgba(243, 156, 18, .7), 0 0 0 0 rgba(243, 156, 18, .7)
+    }
+
+    25% {
+        box-shadow: 0 0 0 50px rgb(243, 156, 18, 0), 0 0 0 0 rgba(243, 156, 18, .7)
+    }
+}
+
+@keyframes animate-warning {
+    0% {
+        box-shadow: 0 0 0 0 rgba(243, 156, 18, .7), 0 0 0 0 rgba(243, 156, 18, .7)
+    }
+
+    25% {
+        box-shadow: 0 0 0 50px rgb(243, 156, 18, 0), 0 0 0 0 rgba(243, 156, 18, .7)
+    }
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace
+}
+*/

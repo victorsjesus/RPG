@@ -1,144 +1,200 @@
-<html>
-<head>
-	<title>RPG GURPS XD 3.X - Login</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-	
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
-	<!-- ### CSS ### -->
-	<style rel="stylesheet" type="text/css">
-		
-		body {height: 100%; width:100%;
-		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-		font-size: 16px;
-		}
-		
-		h3 { 
-			color : gold;
-			font-family: 'Permanent Marker', cursive;
-			font-size: 1.7em; 
-			font-style: italic; 
-			font-variant: normal;
-			text-shadow: 5px 5px 20px #333;			
-		}
-		
-		.bg {
-			/* The image used */
-			background-image: url("./imgs/img-RPG/bkgheroquest_Cel.jpg");
-			/* Full height */
-			height: 100%; 
-			/* Center and scale the image nicely */
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
-		/* For width 600px and larger: */
-		@media only screen and (min-width: 600px) {
-			.bg { 
-				background-image: url('./imgs/img-RPG/bkgheroquest.jpg'); 
-			}
-		}
-		
-		.caption {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			margin-right: -50%;
-			transform: translate(-50%, -50%);
-			text-align: center;
-		}
-		
-		
-		
-	</style>
-</head>
-<body>
-	<div class="bg">
-		<div class ="caption">
-			<h3>Está preparado para enfrentar seu maior desafio?</h3>
-			<button type="button" class="btn btn-default btn-lg " id="btnLogin">Login</button>
-		</div>
-	</div>
-	
-	<!-- Modal -->
-	<div class="modal fade" id="modalLogin" role="dialog">
-		<div class="modal-dialog" style="top:15%">
-    
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header" style="padding:35px 50px;">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4><i class="fas fa-dice"></i><i class="fab fa-d-and-d"></i></span> Login</h4>
-				</div>
-				<div class="modal-body" style="padding:40px 50px;">
-					<form role="form">
-						<div class="form-group">
-							<label for="usrname"><i class="fas fa-dragon"></i></span> Username</label>
-							<input type="text" class="form-control" id="usrname" placeholder="Nome do usuário">
-						</div>
-						<div class="form-group">
-							<label for="psw"><i class="fas fa-key"></i></span> Password</label>
-							<input type="password" class="form-control" id="psw" placeholder="Senha">
-						</div>
-						<!-- <div class="checkbox">
-							<label><input type="checkbox" value="" checked>Lembre-se de mim</label>
-						</div> -->
-						
-					</form>
-					<button type="submit" class="btn btn-success btn-block" onclick="verificaLogin()"><i class="fas fa-dungeon"></i> Login</button>
-				</div>
-				 <div class="modal-footer">
-					<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-					<!--<p>Ainda não é membro? <a href="#">Sign Up</a></p>
-					<p>Esqueceu a <a href="#">Senha?</a></p>-->
-				</div> 
-			</div>
-      
-		</div>
-	</div> 
+<!DOCTYPE html>
 
-	
-<!-- SCRIPTS -->
-	<script type="text/javascript">
-		<!-- Verificar LOGIN =============== -->
-		<!-- Variáveis -->
-		var username;
-		var password;
-		var validador = false;
-		<!-- Verificação -->
-		function verificaLogin () {
-			username =  document.getElementById("usrname").value;
-			password =  document.getElementById("psw").value;
-			
-			<!-- Teste Jr -->
-			if (username == "sjunior" && password == "eragonkill") {
-				//window.open("file:./RPG-Itens_Comuns.html", "_self");
-				location.href = "https://victorsjesus.github.io/RPG/RPG-Itens_Comuns.html";
-				validador = true;
-			}
-			
-			<!-- Caso não identifique -->
-			if (validador == false) {
-				alert("Usuário não identificado");
-			}
-		}
-	
-	</script>
-	<script> <!-- Abrir e fechar Modal -->
-		$(document).ready(function(){
-			$("#btnLogin").click(function(){
-				$("#modalLogin").modal();
-			});
-		});
-	</script>
-	
-</body>
+<html lang="pt-br">  
+    <head>
+        <title>Teste</title>
+        <meta charset="UTF-8">
+        <!-- <link rel="icon" href=".\imgs\favicon_index.png" type="image/png" sizes="16x16"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS -->
+        <link rel="stylesheet" href=".\CSS\main-css.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- TopBar-->
+        <nav class="navbar">
+            CHAR
+            <div style="float:right"> <i class="imgIcon">☰</i> </div>
+        </nav>
+
+        <!-- Main -->
+        <div class="main padding-small center-main">
+            
+            <!-- Card Char -->
+            <div class="card" style="width: 100%; max-width: 520px;min-width: 320px; height: 322px;">
+                <div style="height: 250px;width: 100%; max-width: 100%">
+                    <div class="cardImput" style="height: 100%;width: 39.5%;float: left;padding-bottom: 5px; margin: 1px;"> Foto
+                        
+                        <div class="subCard" style="width: 95%;height: 90%;">
+                            <div class="cardTxtGrande">200 Pts.</div>    
+                        </div>
+                    </div>
+                    <div style="width: 59.5%;float: right;height: 100%; display: flex; flex-wrap: wrap;">
+                        <div class="cardImput" style="width: 100%;">Nome <br>
+                            <div class="cardTxt">banana</div> 
+                        </div>
+                        <div class="cardImput" style="width: 50%;">Classe
+                            <div class="cardTxt">xxxx</div> 
+                        </div>
+                        <div class="cardImput" style="width: 48%;">Sub-Classe
+                            <div class="cardTxt">xxxx</div> 
+                        </div>
+                        <div class="cardImput" style="width: 37.5%;">Corrida</div>
+                        <div class="cardImput" style="width: 30.5%;">Altura</div>
+                        <div class="cardImput" style="width: 29%;">Peso
+                            <div class="cardTxt">xxxxxxxxxxxxxxxxxxxxxxxxxxx</div> 
+                        </div>
+                        <div class="cardImput" style="width: 100%; height: 42.5%;">História
+                            <div style="
+                                color: azure;
+                                font-size: 75%;
+                                margin-left: 6px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 4;
+                                -webkit-box-orient: vertical;
+                                ">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non diam et ex pharetra laoreet bibendum vel orci. 
+                                Ut iaculis nibh quis dui ornare, in feugiat nibh interdum. Donec sed pulvinar nisl, vel ultricies odio. 
+                                Vestibulum condimentum dui sed hendrerit ullamcorper. Praesent vitae vestibulum libero. Aenean consectetur 
+                                mauris risus, id congue elit finibus a. Fusce dignissim nisi ac lacinia pulvinar. Mauris arcu elit, interdum vel 
+                                pretium in, interdum ut erat. Maecenas quis egestas turpis. Ut vitae vestibulum quam. Aenean posuere, velit vel 
+                                commodo efficitur, nibh lacus dapibus sem, a efficitur elit eros eget felis. Ut tempor nisi elit, a rutrum enim 
+                                feugiat et. Nulla vitae lacus nec ante ullamcorper aliquet id id tortor. Quisque vulputate commodo consequat. 
+                                Etiam egestas sed elit quis efficitur. Nullam congue risus eu diam ultricies dapibus. Phasellus turpis justo, 
+                                maximus eget feugiat eu, rutrum venenatis massa. Fusce aliquet vehicula turpis, ut elementum eros gravida in. 
+                                Proin hendrerit pulvinar metus, eget aliquet metus facilisis ut. Cras vitae justo ut nibh elementum molestie. 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; margin-top: 2px; width: 100%;">
+                    <div class="cardImput" style="margin:4.35px 2px 0px 0px; width: 49.75%; height: 88%;">
+                        <img src="IMGS/heartIcon.png" class="imgIcon"/>&nbsp;Saúde 
+                        <span class="txtDescrBr" style="float: right;">VIDA TOTAL</span>
+                        <div class="w3-light-grey w3-round-xxlarge" style="margin: 2px 0px;">
+                            <div class="w3-container w3-green w3-center w3-round-xxlarge" style="width:25%; font-size: 10px;">25%</div>
+                        </div>
+                        <div class="w3-container">
+                            <span class="txtDescrBr" style="float: left;">Status</span>
+                            <span class="txtDescrBr" style="float: right;">MAX e MIN</span>
+                        </div>  
+                    </div>
+                    <div class="cardImput" style="margin:4.35px 0px 2px 2px; width: 49.75%; height: 88%;">
+                        <img src="IMGS/manaIcon.png" class="imgIcon"/>&nbsp;Mxnx 
+                        <span class="txtDescrBr" style="float: right;">Mxnx Total</span>
+                        <div class="w3-light-grey w3-round-xxlarge" style="margin: 2px 0px;">
+                            <div class="w3-container w3-green w3-center w3-round-xxlarge" style="width:85%; font-size: 10px;">85%</div>
+                        </div>
+                        <div class="w3-container">
+                            <span class="txtDescrBr" style="float: left;">Teste</span>
+                            <span class="txtDescrBr" style="float: right;">-5</span>
+                        </div>  
+                    </div>
+                </div>               
+            </div> <!-- Fim do Card Char -->
+
+            
+
+
+
+
+            <!-- Card Char -->
+            <div class="card" style="width: 450px; max-width: 100%; height: 322px;">
+                <!-- Atributos -->
+                <div style="width: 16%; height: 101%; display: flex; flex-wrap: wrap;">
+                    <div class="cardImput" >STR <br>
+                        <div class="cardTxtGrande">10</div>
+                    </div>
+                    <div class="cardImput" >DX
+                        <div class="cardTxtGrande">10</div> 
+                    </div>
+                    <div class="cardImput" >IQ
+                        <div class="cardTxtGrande">10</div> 
+                    </div>
+                    <div class="cardImput" >HT
+                        <div class="cardTxtGrande">10</div> 
+                    </div>
+                    <div class="cardImput">MG
+                        <div class="cardTxtGrande">xxxxx</div> 
+                    </div>
+                </div>
+                <!-- MAP -->
+                <div style="width: 55%; height: 100%;">
+                    <object style="height: 254px;" type="text/html" data=".\Grafico\grafico.html"></object>
+                    
+                    <div style="display: flex; height: 53px;">
+                        <div class="cardImput" style="height: 100%;">
+                            <div class="cardTxtGrande">xxxxx</div> 
+                            
+                            
+                              
+                        </div>
+                        <div class="cardImput" style="height: 100%;">
+                            <div class="cardTxtGrande">xxxxx</div> 
+                            
+                            
+                              
+                        </div><div class="cardImput" style="height: 100%;">
+                            <div class="cardTxtGrande">xxxxx</div> 
+                            
+                            
+                              
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- Dados -->
+                <div style="width: 25%; height: 100%;">
+                    <div class="cardImput" style="height: 70px; margin-top: 0;">Dano<br>
+                        <span class="cardTxt" style="float: left;">Balanço</span>
+                        <div class ="linha" style="float: left;"></div>
+                        <div class="cardTxtGrande" style="margin: -4px 0px;">2d6-1</div>
+                    </div>
+                    <div class="cardImput" style="margin-top: -1px; height: 53px;">
+                        <span class="cardTxt" style="float: left;">GdP</span>
+                        <div class ="linha" style="float: left;"></div>
+                        <div class="cardTxtGrande">1d6</div> 
+                    </div>
+                    <div style="height: 2px;"></div>
+                    <div class="cardImput" style="height: 70px;">Defesa<br>
+                        <span class="cardTxt" style="float: left;">Esquiva</span>
+                        <div class ="linha" style="float: left;"></div>
+                        <div class="cardTxtGrande" style="margin: -3px 0px;">2d6-1</div>
+                    </div>
+                    <div class="cardImput" style="margin-top: -7px; height: 53px;">
+                        <span class="cardTxt" style="float: left;">Bloqueio</span>
+                        <div class ="linha" style="float: left;"></div>
+                        <div class="cardTxtGrande">1d6</div> 
+                    </div>
+                    <div class="cardImput" style="margin-top: -10px; height: 53px;">
+                        <span class="cardTxt" style="float: left;">Aparar</span>
+                        <div class ="linha" style="float: left;"></div>
+                        <div class="cardTxtGrande">1d6</div> 
+                    </div>
+                    
+                    <div class="cardImput" style="height: 27px; margin-top: 2px;">RD
+                        <div class="cardTxtGrande" style="position: relative;">3</div>
+                    </div>
+                    
+                </div>
+
+
+                
+            </div> <!-- Fim do Card Char -->
+
+            
+
+        </div> <!-- Fim da Main -->
+        
+    </body>
 </html>
