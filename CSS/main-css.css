@@ -34,23 +34,37 @@ object {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;  /*Justificar em todos os monitores*/
 }
 
 @media only screen and (max-width: 800px) {
     .padding-small {
         padding: 25px 0px 0px; /* Acima, Laterais e Abaixo */
     }
-    .center-main{
-        justify-content: center;
+    .cardGroup {
+        flex-wrap: wrap !important;
     }
-  }
+}
+
+.cardGroup{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width: 100%;
+}
 
 .card{
     background-color: #303030;
     margin: 2px;
     padding: 2px;
-    display: flex; flex-wrap: wrap; justify-content: space-evenly;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.main .card {
+    width: 520px; height: 322px; max-width: 520px;min-width: 320px; 
 }
 
 .subCard {
