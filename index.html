@@ -1,5 +1,15 @@
 <!DOCTYPE html>
-
+<!--Página desenvolvida por Victor S Jesus
+    LinkedIn:   https://www.linkedin.com/in/victorsjesus
+    Steam:      https://steamcommunity.com/id/victorsjesus/
+    E-mail:     victorsjesus@ymail.com
+    É gratuito, mas me dá aquela moral ;)
+-->
+<!-- :: TODO :: 
+    #Card Char 2.2 -- Tornar a lista de equipamentos responsivo para celular, como ser duas colunas  ao inves de tres
+    #Card Char 1.2 -- Tornar responsivo (mais?) pq talvez no menor dos casos o grafico pode ficar estranho
+    #barraLateral pode ser responsiva acima de 2000px com o weight: calc(100% - 1596px)
+-->
 <html lang="pt-br">  
     <head>
         <title>Teste</title>
@@ -23,14 +33,14 @@
         </nav>
 
         <!-- Main -->
-        <div class="main padding-small center-main">
-            
+        <div class="main center-main" style="width: 80%;">
+            <!-- LINHA 1 ------------------------------------------------------------------------------------->
             <div class="cardGroup">
                 <!-- Card Char 1.1-->
                 <div class="card">
                     <div style="height: 250px;width: 100%; max-width: 100%">
-                        <div class="cardImput" style="height: 100%;width: 39.5%;float: left; margin: 1px;"> Foto
-                            
+                        <div class="cardImput" style="height: 100%;width: 39.5%;float: left; margin: 1px;"> 
+                            Foto
                             <div class="subCard" style="width: 95%;height: 90%;">
                                 <div class="cardTxtGrande">200 Pts.</div>    
                             </div>
@@ -51,16 +61,7 @@
                                 <div class="cardTxt">xxxxxxxxxxxxxxxxxxxxxxxxxxx</div> 
                             </div>
                             <div class="cardImput" style="width: 100%; height: 42.5%;">História
-                                <div style="
-                                    color: azure;
-                                    font-size: 75%;
-                                    margin-left: 6px;
-                                    overflow: hidden;
-                                    text-overflow: ellipsis;
-                                    display: -webkit-box;
-                                    -webkit-line-clamp: 4;
-                                    -webkit-box-orient: vertical;
-                                    ">
+                                <div class="cardTxtLongo">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non diam et ex pharetra laoreet bibendum vel orci. 
                                     Ut iaculis nibh quis dui ornare, in feugiat nibh interdum. Donec sed pulvinar nisl, vel ultricies odio. 
                                     Vestibulum condimentum dui sed hendrerit ullamcorper. Praesent vitae vestibulum libero. Aenean consectetur 
@@ -71,7 +72,7 @@
                                     Etiam egestas sed elit quis efficitur. Nullam congue risus eu diam ultricies dapibus. Phasellus turpis justo, 
                                     maximus eget feugiat eu, rutrum venenatis massa. Fusce aliquet vehicula turpis, ut elementum eros gravida in. 
                                     Proin hendrerit pulvinar metus, eget aliquet metus facilisis ut. Cras vitae justo ut nibh elementum molestie. 
-                                </div> 
+                                </div> <div style="float: right; margin: 0px 5px;"><img src="IMGS/plusIcon.png" class="imgIcon"/></div>
                             </div>
                         </div>
                     </div>
@@ -100,13 +101,8 @@
                         </div>
                     </div>               
                 </div> <!-- Fim do Card Char -->
-
                 
-
-
-
-
-                <!-- Card Char 1.2-->
+                <!-- Card Char 1.2-------------------------------------------------------->
                 <div class="card" >
                     <!-- Atributos -->
                     <div style="width: 16%; height: 101%; display: flex; flex-wrap: wrap;">
@@ -123,7 +119,7 @@
                             <div class="cardTxtGrande">10</div> 
                         </div>
                         <div class="cardImput">MG
-                            <div class="cardTxtGrande">xxxxx</div> 
+                            <div class="cardTxtGrande">10</div> 
                         </div>
                     </div>
                     <!-- MAP -->
@@ -143,9 +139,6 @@
                             <div class="cardImput" style="height: 100%;">Res.Mg
                                 <div class="cardTxtGrande">2</div> 
                             </div>
-
-
-
                         </div>
                     </div>
                     <!-- Dados -->
@@ -176,20 +169,93 @@
                             <div class ="linha" style="float: left;"></div>
                             <div class="cardTxtGrande">1d6</div> 
                         </div>
-                        
                         <div class="cardImput" style="height: 27px; margin-top: 2px;">Vel.
                             <div class="cardTxtGrande" style="position: relative;">3</div>
                         </div>
+                    </div>                   
+                </div> <!-- Fim do Card Char 1.2-->
+            </div> 
+            <!-- FIM DA LINHA 1 ------------------------------------------------------------------------------>
+            <!-- LINHA 2 ------------------------------------------------------------------------------------->
+            <div class="cardGroup">
+                <!-- Card Char 2.1-------------------------------------------------------->
+                <div class="card">
+                    <div class="cardImput">
+                        
                         
                     </div>
-
-
-                    
+                                  
                 </div> <!-- Fim do Card Char -->
-            </div>
-            
+                
+                <!-- Card Char 2.2-------------------------------------------------------->
+                <div class="card" style="justify-content: left;">
+                    <!--Coluna 1-->
+                    <div class="cxLinear" style="width: 49%;">
+                        <span class="txtTitulo1">Equipamentos</span>
+                        <div class="cardImput cxLinear" style="font-size: 105%;"> Principal
+                            <div class="cxLinha">
+                                Descr.:
+                                <span class="cxLinhaSublinhado">&nbsp;Aspirador de pó</span>
+                            </div>
+                            <div class="cxLinha">
+                                NH:&nbsp;
+                                <span class="cxLinhaSublinhado">&nbsp;</span>
+                                &nbsp;Peso:
+                                <span class="cxLinhaSublinhado">&nbsp;</span>
+                                &nbsp;Aparar:
+                                <span class="cxLinhaSublinhado">&nbsp;</span>
+                            </div>
+                            <div class="cxLinha">
+                                Bal:&nbsp;
+                                <span class="cxLinhaSublinhado">&nbsp;</span>
+                                &nbsp;GdP:
+                                <span class="cxLinhaSublinhado">&nbsp;</span>
+                                &nbsp;Arr:
+                                <span class="cxLinhaSublinhado">&nbsp;</span>
+                            </div>
+                        </div>
+                        <div class="cardImput cxLinear" style="font-size: 105%;"> Elmo
+                            <div class="cxLinha">
+                                Descr.:
+                                <span class="cxLinhaSublinhado">&nbsp;Aspirador de pó</span>
+                            </div>
+                            <div class="cxLinha">
+                                RD:&nbsp;
+                                <span class="cxLinhaSublinhado">&nbsp;</span>
+                                &nbsp;RM:
+                                <span class="cxLinhaSublinhado">&nbsp;</span>
+                                &nbsp;Peso:
+                                <span class="cxLinhaSublinhado">&nbsp;</span>
+                            </div>  
+                        </div>
+                        <div class="cardImput" >DX
+                            <div class="cardTxtGrande">10</div> 
+                        </div>
+                        <div class="cardImput" >IQ
+                            <div class="cardTxtGrande">10</div> 
+                        </div>
+                        
+                    </div>
+                    
 
-        </div> <!-- Fim da Main -->
+
+                </div> <!-- Fim do Card Char -->
+
+
+            </div> 
+            <!-- FIM DA LINHA 2 ------------------------------------------------------------------------------>
+
+            
+           
+        </div> <!-- Fim da Main-->
+
+        <!-- painel Lateral ------------------------------------------------------------------------------>
+        <div class="painelLateral" style="display: flex; right:0; ">AAAAAAAAAAAAAAA</div>
+
+
+
+
+    
         
     </body>
 </html>
