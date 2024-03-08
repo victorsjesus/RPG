@@ -5,10 +5,11 @@
     E-mail:     victorsjesus@ymail.com
     É gratuito, mas me dá aquela moral ;)
 -->
-<!-- :: TODO :: 
+<!-- :: ToDo :: 
     #Card Char 2.2 -- Tornar a lista de equipamentos responsivo para celular, como ser duas colunas  ao inves de tres
     #Card Char 1.2 -- Tornar responsivo (mais?) pq talvez no menor dos casos o grafico pode ficar estranho
     #barraLateral pode ser responsiva acima de 2000px com o weight: calc(100% - 1596px)
+    #VANTAGENS e DESVANTAGENS irem pra widt 100% em tela pequena
 -->
 <html lang="pt-br">  
     <head>
@@ -72,7 +73,8 @@
                                     Etiam egestas sed elit quis efficitur. Nullam congue risus eu diam ultricies dapibus. Phasellus turpis justo, 
                                     maximus eget feugiat eu, rutrum venenatis massa. Fusce aliquet vehicula turpis, ut elementum eros gravida in. 
                                     Proin hendrerit pulvinar metus, eget aliquet metus facilisis ut. Cras vitae justo ut nibh elementum molestie. 
-                                </div> <div style="float: right; margin: 0px 5px;"><img src="IMGS/plusIcon.png" class="imgIcon"/></div>
+                                </div> 
+                                <div style="float: right; position: absolute; bottom: 3px; right: 3px;"><img src="IMGS/plusIcon.png" class="imgIcon"/></div>
                             </div>
                         </div>
                     </div>
@@ -91,8 +93,8 @@
                         <div class="cardImput" style="margin:4.35px 0px 2px 2px; width: 49.75%; height: 88%;">
                             <img src="IMGS/manaIcon.png" class="imgIcon"/>&nbsp;Mxnx 
                             <span class="txtDescrBr" style="float: right;">Mxnx Total</span>
-                            <div class="w3-light-grey w3-round-xxlarge" style="margin: 2px 0px;">
-                                <div class="w3-container w3-green w3-center w3-round-xxlarge" style="width:85%; font-size: 10px;">85%</div>
+                            <div class="barraDentro">
+                                <div class="barraFora" style="width:85%; font-size: 10px;">85%</div>
                             </div>
                             <div class="w3-container">
                                 <span class="txtDescrBr" style="float: left;">Teste</span>
@@ -174,83 +176,253 @@
                         </div>
                     </div>                   
                 </div> <!-- Fim do Card Char 1.2-->
-            </div> 
-            <!-- FIM DA LINHA 1 ------------------------------------------------------------------------------>
+            </div> <!-- FIM DA LINHA 1 ----------------------------------------------------------------------->
+            
             <!-- LINHA 2 ------------------------------------------------------------------------------------->
             <div class="cardGroup">
                 <!-- Card Char 2.1-------------------------------------------------------->
-                <div class="card">
-                    <div class="cardImput">
-                        
-                        
-                    </div>
-                                  
-                </div> <!-- Fim do Card Char -->
-                
-                <!-- Card Char 2.2-------------------------------------------------------->
-                <div class="card" style="justify-content: left;">
-                    <!--Coluna 1-->
-                    <div class="cxLinear" style="width: 49%;">
-                        <span class="txtTitulo1">Equipamentos</span>
-                        <div class="cardImput cxLinear" style="font-size: 105%;"> Principal
-                            <div class="cxLinha">
-                                Descr.:
-                                <span class="cxLinhaSublinhado">&nbsp;Aspirador de pó</span>
+                <div class="card" style="justify-content: space-between;">
+                    <!-- VANTAGENS -->
+                    <div class="cxColunas" style="width: 49.75%;">
+                        <div class="cardImput cxColunas" style="font-size: 105%; color: aliceblue;"> VANTAGENS
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">-35</span>
                             </div>
-                            <div class="cxLinha">
-                                NH:&nbsp;
-                                <span class="cxLinhaSublinhado">&nbsp;</span>
-                                &nbsp;Peso:
-                                <span class="cxLinhaSublinhado">&nbsp;</span>
-                                &nbsp;Aparar:
-                                <span class="cxLinhaSublinhado">&nbsp;</span>
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">100</span>
                             </div>
-                            <div class="cxLinha">
-                                Bal:&nbsp;
-                                <span class="cxLinhaSublinhado">&nbsp;</span>
-                                &nbsp;GdP:
-                                <span class="cxLinhaSublinhado">&nbsp;</span>
-                                &nbsp;Arr:
-                                <span class="cxLinhaSublinhado">&nbsp;</span>
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">-50</span>
+                            </div>
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">&nbsp;</span>
+                            </div>
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">&nbsp;</span>
+                            </div>
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">&nbsp;</span>
+                            </div>
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">&nbsp;</span>
+                            </div>
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">&nbsp;</span>
+                            </div>
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">&nbsp;</span>
+                            </div>
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">&nbsp;</span>
+                            </div>
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">&nbsp;</span>
                             </div>
                         </div>
-                        <div class="cardImput cxLinear" style="font-size: 105%;"> Elmo
-                            <div class="cxLinha">
-                                Descr.:
-                                <span class="cxLinhaSublinhado">&nbsp;Aspirador de pó</span>
+                        <div class="cardImput">TOTAL:<div class="cardTxtGrande">85 Pts.</div></div>
+                    </div> <!--Fim da Coluna 1-->
+                    <!-- DESVANTAGENS -->
+                    <div class="cxColunas" style="width: 49.75%;">
+                        <div class="cardImput cxColunas" style="font-size: 105%; color: aliceblue"> DESVANTAGENS
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">-31</span>
                             </div>
-                            <div class="cxLinha">
-                                RD:&nbsp;
-                                <span class="cxLinhaSublinhado">&nbsp;</span>
-                                &nbsp;RM:
-                                <span class="cxLinhaSublinhado">&nbsp;</span>
-                                &nbsp;Peso:
-                                <span class="cxLinhaSublinhado">&nbsp;</span>
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">-32</span>
+                            </div>
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">-33</span>
+                            </div>
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">-34</span>
+                            </div>
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">-35</span>
+                            </div>
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">-36</span>
+                            </div>
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">-36</span>
+                            </div>
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">&nbsp;</span>
+                            </div>
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">&nbsp;</span>
+                            </div>
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">&nbsp;</span>
+                            </div>
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">Aspirador de pó</span>
+                                PTS.:           <span class="cardLinhaSublinhado" style="width: 25%;">&nbsp;</span>
+                            </div>
+                        </div>
+                        <div class="cardImput">TOTAL:<div class="cardTxtGrande">86 Pts.</div></div>
+                    </div> <!--Fim da Coluna 2-->
+                </div> <!-- Fim do Card Char -->
+                <!-- Card Char 2.2-------------------------------------------------------->
+                <div class="card">
+                    <span class="txtTitulo1" style="width: 100%; height: 15px;">Equipamentos</span>
+                    <!--Coluna 1-->
+                    <div class="cxColunas" style="width: 49%;">
+                        <div class="cardImput cxColunas" style="font-size: 105%;"> Principal
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">&nbsp;Aspirador de pó</span>
+                            </div>
+                            <div class="cardLinha">
+                                Perícia:        <span class="cardLinhaSublinhado">XXXX</span>
+                                &nbsp;NH:       <span class="cardLinhaSublinhado">XXXX</span>
+                            </div>
+                            <div class="cardLinha">
+                                Bal:            <span class="cardLinhaSublinhado">&nbsp;</span>
+                                &nbsp;GdP:      <span class="cardLinhaSublinhado">&nbsp;</span>
+                                &nbsp;Aparar:   <span class="cardLinhaSublinhado">&nbsp;</span>
+                            </div> 
+                        </div>
+                        <div class="cardImput cxColunas" style="font-size: 105%;"> Escudo
+                             <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">&nbsp;Aspirador de pó</span>
+                            </div>
+                            <div class="cardLinha">
+                                Perícia:&nbsp;  <span class="cardLinhaSublinhado">&nbsp;</span>
+                                &nbsp;NH:       <span class="cardLinhaSublinhado">&nbsp;</span>
+                            </div>
+                            <div class="cardLinha">
+                                Peso:           <span class="cardLinhaSublinhado">&nbsp;</span>
+                                &nbsp;RF:       <span class="cardLinhaSublinhado">&nbsp;</span>
+                                &nbsp;RM:       <span class="cardLinhaSublinhado">&nbsp;</span>
+                            </div>
+                        </div>
+                        <div class="cardImput cxColunas" style="font-size: 105%;"> Botas
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">&nbsp;Aspirador de pó</span>
+                            </div>
+                            <div class="cardLinha">
+                                RF:             <span class="cardLinhaSublinhado">&nbsp;</span>
+                                &nbsp;RM:       <span class="cardLinhaSublinhado">&nbsp;</span>
+                                &nbsp;Peso:     <span class="cardLinhaSublinhado">&nbsp;</span>
                             </div>  
                         </div>
-                        <div class="cardImput" >DX
-                            <div class="cardTxtGrande">10</div> 
+                    </div> <!--Fim da Coluna 1-->
+                    <!--Coluna 2-->
+                    <div class="cxColunas" style="width: 49%;">
+                        <div class="cardImput cxColunas" style="font-size: 105%;"> Torso
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">&nbsp;Aspirador de pó</span>
+                            </div>
+                            <div class="cardLinha">
+                                Peso:           <span class="cardLinhaSublinhado">&nbsp;</span>
+                                &nbsp;GdP:      <span class="cardLinhaSublinhado">&nbsp;</span>
+                                &nbsp;BAL:      <span class="cardLinhaSublinhado">&nbsp;</span>
+                            </div>
+                            <div class="cardLinha">
+                                RM:             <span class="cardLinhaSublinhado">&nbsp;</span>
+                                &nbsp;Efeito:   <span class="cardLinhaSublinhado">&nbsp;</span>
+                            </div>
                         </div>
-                        <div class="cardImput" >IQ
-                            <div class="cardTxtGrande">10</div> 
+                        <div class="cardImput cxColunas" style="font-size: 105%;"> Elmo
+                            <div class="cardLinha">
+                                Descr.:         <span class="cardLinhaSublinhado">&nbsp;Aspirador de pó</span>
+                            </div>
+                            <div class="cardLinha">
+                                RF:             <span class="cardLinhaSublinhado">&nbsp;</span>
+                                &nbsp;RM:       <span class="cardLinhaSublinhado">&nbsp;</span>
+                                &nbsp;Peso:     <span class="cardLinhaSublinhado">&nbsp;</span>
+                            </div>  
+                        </div>
+                        <div class="cardImput cxColunas" style="font-size: 105%;"> Amuleto e Acessórios
+                            <div class="cardLinha">
+                                Amuleto:
+                                <span class="cardLinhaSublinhado">&nbsp;Aspirador de pó</span>
+                            </div>
+                            <div class="cardLinha">
+                                Acessório:&nbsp; <span class="cardLinhaSublinhado">&nbsp;</span>
+                            </div>
+                            <div class="cardLinha">
+                                Acessório:&nbsp; <span class="cardLinhaSublinhado">&nbsp;</span>
+                            </div>
                         </div>
                         
                     </div>
-                    
-
+                    <!--Fim da Coluna 2-->
 
                 </div> <!-- Fim do Card Char -->
 
 
-            </div> 
-            <!-- FIM DA LINHA 2 ------------------------------------------------------------------------------>
+            </div> <!-- FIM DA LINHA 2 ----------------------------------------------------------------------->
 
+            <!-- LINHA 3 ------------------------------------------------------------------------------------->
+            <div class="cardGroup">
+                <!-- Card Char 3.1-------------------------------------------------------->
+                <div class="card">
+                    <div class="cardImput">
+                        •Estamina<br>
+                        •Aparência<br>
+                        •Características da raça<br>
+                        •Reação<br>
+                        •Lista de Peso
+                    </div>
+                </div> <!-- Fim do Card Char 3.1 ----------------------------------------->
+                
+                <!-- Card Char 3.2-------------------------------------------------------->
+                <div class="card">
+                    <div class="cardImput" style="width: 49%;">
+                        <img src="IMGS/staminaIcon.png" class="imgIcon"/>&nbsp;Estamina 
+                        <span class="txtDescrBr" style="float: right;">Max</span>
+                        <div class="barraDentro">
+                            <div class="barraFora" style="width:21%;">21%</div>
+                        </div>
+                        <div class="w3-container">
+                            <span class="txtDescrBr" style="float: left;">Estado</span>
+                            <span class="txtDescrBr" style="float: right;">-5 atual</span>
+                        </div>  
+                    </div>
+                    <div class="" style="display: flex; width: 49%;">
+                        <div class="" style="display: flex; flex-wrap: wrap; width: 125%;">
+                            <div class="cardImput">
+                                Peso atual<br> teste
+                            </div>
+                            <div class="cardImput">
+                                Red.p/peso
+                            </div>
+                        </div>
+                        <div class="cardImput">
+                            Reação
+                        </div>
+                    </div>
+                </div> <!-- Fim do Card Char 3.2 ----------------------------------------->
+
+            </div> <!-- FIM DA LINHA 2 ----------------------------------------------------------------------->
+            
             
            
         </div> <!-- Fim da Main-->
 
         <!-- painel Lateral ------------------------------------------------------------------------------>
-        <div class="painelLateral" style="display: flex; right:0; ">AAAAAAAAAAAAAAA</div>
+        <div class="card painelLateral" style="right:0; ">AAAAAAAAAAAAAAA</div>
 
 
 
