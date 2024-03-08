@@ -38,30 +38,9 @@ object {
     /*justify-content: center;  /*Justificar em todos os monitores*/
 }
 
-@media only screen and (max-width: 425px) {
-    .main {
-        font-size: 85% !important;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .main {
-        padding: 25px 0px 0px; /* Acima, Laterais e Abaixo */
-    }
-    .cardGroup {
-        flex-wrap: wrap !important;
-    }
-}
-
-@media only screen and (min-width: 2000px) {
-    .main {
-        justify-content: center; /*Para ultrawide, centraliza tudo*/
-    }
-}
-
 .painelLateral {
     position: fixed;
-    top: 25px;
+    top: 22px;
     width: 20%;
     height: 100%;
 }
@@ -140,13 +119,21 @@ object {
     text-overflow: ellipsis; 
 }
 
+.cxColunas {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+}
+
 .cxLinear {
     display: flex;
     flex-direction: column;
     height: auto;
+    width: 100%;
 }
 
-.cxLinha {
+.cardLinha {
     display: flex;
     flex-direction: row;
     height: auto;
@@ -155,11 +142,12 @@ object {
     margin: 1px 2px;
 }
 
-.cxLinhaSublinhado{
-    border-bottom: 2px solid #222;
+.cardLinhaSublinhado{
+    border-bottom: 2px solid #babaca;
     width: 100%;
     color: #DDD;
     font-size: 102%;
+    text-align: center;
 }
 
 .txtTitulo1 {
@@ -189,4 +177,44 @@ object {
     width: 15px;
     font-style: normal;
     font-weight: bold;
+}
+
+.barraDentro{
+    background-color: #BABACA !important;
+    border-radius: 32px;
+    margin: 2px 0px;
+    font-size: 10px;
+}
+
+.barraFora {
+    color:whitesmoke !important;
+    background-color: #367078 !important;
+    border-radius: 32px;
+    text-align: center;
+}
+
+/* :::::::::: Alterações em diferentes tipos de Tela :::::::::::*/
+@media only screen and (max-width: 425px) {
+    .main {
+        font-size: 85% !important;
+    }
+    .card{
+        height: auto !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .main {
+        padding: 25px 0px 0px; /* Acima, Laterais e Abaixo */
+    }
+    .cardGroup {
+        flex-wrap: wrap !important;
+    }
+}
+
+/*ULTRA WIDE*/
+@media only screen and (min-width: 2000px) {
+    .main {
+        justify-content: center; /*Para ultrawide, centraliza tudo*/
+    }
 }
